@@ -21,14 +21,12 @@ import textwrap
 
 """
 
-authors=ps.DataFrame(['author_id', 'authon_name']);
+authors=ps.DataFrame({'author_id':[1,2,3], 'author_name':['Тургенев','Чехов','Островский']}, columns=['author_id','author_name']);
 #_id', 'author_name']);
 
-#for e in auth
+#print(authors)
 
-authors.append([1, 'Тургенев'])
 
-print(authors)
 
 
 
