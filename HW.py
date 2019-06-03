@@ -21,8 +21,11 @@ import textwrap
 
 """
 
-authors=ps.DataFrame({'author_id':[1,2,3], 'author_name':['Тургенев','Чехов','Островский']}, columns=['author_id','author_name']);
+authors=ps.DataFrame({'author_id':[1,2,3], 
+                      'author_name':['Тургенев','Чехов','Островский']}, columns=['author_id','author_name'])
 #_id', 'author_name']);
+print(authors.loc[1,:])
+
 
 #print(authors)
 
