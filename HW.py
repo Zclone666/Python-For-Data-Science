@@ -45,6 +45,11 @@ top5=authors_price.nlargest(5, 'price')
 print(top5)
 
 
+authors_stat=authors_price.groupby('author_name').agg({'price':'min', 'price':'max','price':'mean'})
+#print (authors_price)
+print(authors_stat)
+
+
 
 
 
