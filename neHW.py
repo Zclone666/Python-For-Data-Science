@@ -33,6 +33,9 @@ books=ps.DataFrame({'author_id':[1, 1, 1, 2, 2, 3, 3], 'book_title':['Отцы �
 #print(authors)
 
 
+authors_price=ps.merge(authors, books, on='author_id', how='inner')
+
+print(authors_price)
 
 
 
