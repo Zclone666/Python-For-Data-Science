@@ -40,7 +40,9 @@ columns=['author_id','book_title','price']);
 
 authors_price=ps.merge(authors, books, on='author_id', how='inner')
 
-print(authors_price)
+top5=authors_price.nlargest(5, 'price')
+
+print(top5)
 
 
 
