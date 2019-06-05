@@ -44,6 +44,9 @@ top5=authors_price.nlargest(5, 'price')
 
 print(top5)
 
+#authors_stat=
+
+top5.to_pickle('top5')
 
 
 
