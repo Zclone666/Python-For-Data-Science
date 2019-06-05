@@ -44,11 +44,26 @@ top5=authors_price.nlargest(5, 'price')
 
 print(top5)
 
+<<<<<<< HEAD
 #authors_stat=
 
 top5.to_pickle('top5')
+=======
+author_s=ps.DataFrame({}, columns=['author_name', 'min_price'])
+#authors_stat=authors_price.groupby('author_name').agg({'price':'min'})
+#authors_stat.index=[0,1,2]
+#authors_stat.rename(columns={'price':'min_price'})
+#author_s.set_index('author_name', inplace=True)
+author_s=ps.Series(authors_price.groupby('author_name')['price'].min())
+#=authors_stat#['price'];
+#print (authors_stat)
+print(author_s.columns)
+
+#author_s=authors_price.agg({'price':'min'})
+>>>>>>> branch 'Solution_Search_task2' of https://github.com/Zclone666/Python-For-Data-Science.git
 
 
+#print(author_s)
 
 
 
